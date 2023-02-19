@@ -1,6 +1,6 @@
 # dev
 
-client: `cd client && yarn dev` 
+webapp: `cd webapp && yarn dev` 
 
 server: `cd server && go run .`
 
