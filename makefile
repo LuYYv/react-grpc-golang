@@ -5,10 +5,10 @@ server:
 		--go-grpc_out=server/grpc --go-grpc_opt=paths=source_relative \
 		proto/greet.proto
 
-client:
+webapp:
 	protoc \
-    --js_out=import_style=commonjs:client/src/grpc \
-    --grpc-web_out=import_style=typescript,mode=grpcwebtext:client/src/grpc \
+    --js_out=import_style=commonjs:webapp/src/grpc \
+    --grpc-web_out=import_style=typescript,mode=grpcwebtext:webapp/src/grpc \
 		proto/greet.proto
 
 clean:
